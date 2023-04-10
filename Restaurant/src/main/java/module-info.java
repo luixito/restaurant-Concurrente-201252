@@ -3,6 +3,8 @@ module com.restaurant {
     requires javafx.fxml;
 
 
-    opens com.restaurant to javafx.fxml;
+    opens com.restaurant;
     exports com.restaurant;
+    exports com.restaurant.restaurante;
+    opens com.restaurant.restaurante;
 }
